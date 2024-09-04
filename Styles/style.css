@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "New Amsterdam";
+}
+
+body {
+    text-align: center;
+}
+
+/*Botão voltar ao topo*/
+.btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/*Estilização do menu*/
+header {
+    padding: 10px 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #FFFF00;
+    box-shadow: 2px 2px 10px #FFFF00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #1F1F3F;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.Logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+.menu ul li a {
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.menu a:hover {
+    padding: 5px;
+    background-color: #9400D3;
+    color: white;
+    border-radius: 20px;
+}
+
+/*Estilização da seção Home*/
+
+
+.footer {
+    padding: 20px;
+    letter-spacing: 1px;
+    background-color: #1F1F3F;
+    color: #00FFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFF00;
+}
+
+.footer a:hover {
+    color: #9400D3;
+}
+
+.footer strong {
+    color: #FFFF00;
+}

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamepedia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/Contact-section.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/About-section.css">
+    <link rel="stylesheet" href="Styles/Home-section.css">
+    <link rel="stylesheet" href="Styles/Games-section.css">
     <link rel="shortcut icon" href="Imagens/web/icons8-controlador-nintendo-switch-pro-gradient-32.png" type="image/x-icon">
 </head>
 <body>
@@ -13,6 +18,7 @@
             <a href="#header-section" onclick="scrollToTop()"><img src="Imagens/Logo.png" alt="" class="Logo"></a>
             <nav class="menu">
                 <ul>
+                    <li><a href="#Games-section">Games</a></li>
                     <li><a href="#Sobre-section">Sobre</a></li>
                     <li><a href="#Contato-section">Contato</a></li>
                 </ul>
@@ -23,10 +29,49 @@
         <div class="Home">
             <section id="Home-section">
                 <h1>GAMEPEDIA</h1>
-                <input type="text" placeholder="Digite o nome do jogo">
-                <button>Pesquisar</button>
+                <div class="search">
+                    <input type="text" placeholder="Digite o nome do jogo">
+                    <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+
+                        <div class="text-button">
+                            Pesquisar
+                        </div>
+                    </button>
+                </div>
             </section>
         </div>
+        
+        <section id="Games-section">
+            <h1>JOGOS</h1>
+                <div class="item-result">
+                    <h2>Counter Strike: Global Service</h2>
+                    <img src="Imagens/Jogos/CS_GO.jpg" alt="">
+                    <p class="text-games">Counter-Strike: Global Offensive é um dos jogos de tiro em primeira pessoa mais populares do mundo, conhecido por seu competitivo modo multiplayer.</p>
+                </div>
+                <div class="item-result">
+                    <h2>Assassin's Creed Mirage</h2>
+                    <img src="Imagens/Jogos/Mirage.jpg" alt="">
+                    <p class="text-games">Assassin's Creed Mirage marca um retorno a jogabilidade clássica da franquia, com foco em parkour fluido, assassinatos furtivos e uma narrativa envolvente.</p>
+                </div>
+                <div class="item-result">
+                    <h2>MARVEL Spider-Man</h2>
+                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
+                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                </div>
+                <div class="item-result">
+                    <h2>MARVEL Spider-Man</h2>
+                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
+                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                </div>
+                <div class="item-result">
+                    <h2>MARVEL Spider-Man</h2>
+                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
+                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                </div>
+        </section>
         <div id="Sobre-section">
             <section class="Sobre">
                 <h1>Sobre nós</h1>
@@ -37,7 +82,8 @@
                             <br>
                             Mergulhe em um universo de jogos com a Gamepedia. Somos sua fonte completa para dicas, truques e análises detalhadas dos seus games favoritos. Quer seja um jogador casual ou um expert, nossa comunidade acolhedora te espera para compartilhar experiências, fazer novas amizades e descobrir os últimos lançamentos.
                             
-                            Junte-se a nós e explore um mundo de possibilidades!</p>
+                            Junte-se a nós e explore um mundo de possibilidades!
+                        </p>
                     </div>
                     <div class="carrossel">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
@@ -54,8 +100,8 @@
                             <img src="Imagens/Jogos/Vava.jpg" alt="Valorant" class="slide">
                         </div>
                         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
                 </div>
-            </div>
             </section>
         </div>
         <section id="Contato-section">
@@ -94,7 +140,7 @@
     </main>
     <footer class="footer">
         <span>&copy 2024 - <strong>GAMEPEDIA</strong> todos os direitos reservados.</span>
-        <span>Site desenvolvido por <strong><a href="https://github.com/LPSouz" target="_blank">Lucas Pedro</a></strong> com desáfios da <a href="https://alura.com.br" target="_blank"><strong>Alura</strong></a></span>
+        <span>Site desenvolvido por <strong><a href="https://github.com/LPSouz" target="_blank">Lucas Pedro</a></strong> com desáfios da <strong><a href="https://alura.com.br" target="_blank">Alura</a></strong></span>
     </footer>
     <button class="btnTopo" onclick="scrollToTop()"><img src="Imagens/scrollToTop 1.png" alt="Voltar ao topo"></button>
     <script src="menuNav.js"></script>

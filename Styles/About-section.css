@@ -1,0 +1,108 @@
+.Sobre {
+    background-color: #1F1F3F;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #FFFF00;
+    box-shadow: 2px 2px 10px #FFFF00;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 300px;
+}
+
+.text {
+    max-width: 300px;
+    text-align: left;
+    text-align: justify;
+    margin-right: 20px;
+}
+#Sobre-section h1 {
+    margin-bottom: 100px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #00FFFF;
+}
+
+.text p {
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.6em;
+    border: 1px solid #00FFFF;
+    box-shadow: 2px 2px 10px #00FFFF;
+    border-radius: 20px;
+    background-color: #1F1F3F;
+    color: #00FFFF;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+.text strong {
+    color: #FFFF00;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #00FFFF;
+    box-shadow: 2px 2px 10px #00FFFF;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: #00FFFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #9400D3;
+}
