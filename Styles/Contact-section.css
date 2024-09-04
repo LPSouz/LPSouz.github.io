@@ -43,15 +43,22 @@
 }
 
 .form-group input, .form-group textarea {
-    width: 400px;
+    width: 380px;
     padding: 10px;
-    border: 2px solid #00FFFF;
+    border: 1px solid #1F1F3F;
     border-radius: 20px;
+    box-shadow: -5px 5px 5px #1F1F3F;
     font-size: 1em;
+    background-color: #1F1F3F;
+    color: white;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: white;
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: none;
 }
 
 .form-button {

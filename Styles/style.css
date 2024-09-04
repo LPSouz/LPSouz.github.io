@@ -111,3 +111,84 @@ header {
 .footer strong {
     color: #FFFF00;
 }
+
+/*Responsividade telas médias*/
+@media screen and (max-width: 1024px) {
+    
+
+    body {
+        background-color: black;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .container.responsive {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .text.responsive {
+        max-width: 585px;
+        margin-right: 20px;
+    }
+
+    .text.responsive p {
+        width: 585px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/*Responsividade tablet*/
+@media screen and (max-width: 768px) {
+    #Games-section.responsive {
+        height: 160vh;
+        gap: 20px;
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .social-list.responsive {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+/*
+@media screen and (max-width: 600px) {
+
+    header {
+        width: 72%;
+    }
+    
+    .search.responsive {
+        width: 450px;
+    }
+
+    #Games-section.responsive {
+        height: 360vh;
+        gap: 10px;
+    }
+
+    .container.responsive {
+        width: 1px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .text.responsive {
+        width: 1%;
+    }
+
+    .contato {
+    }
+}
+*/

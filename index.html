@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamepedia</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Styles/Contact-section.css">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/About-section.css">
     <link rel="stylesheet" href="Styles/Home-section.css">
     <link rel="stylesheet" href="Styles/Games-section.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Imagens/web/icons8-controlador-nintendo-switch-pro-gradient-32.png" type="image/x-icon">
 </head>
 <body>
@@ -29,7 +29,7 @@
         <div class="Home">
             <section id="Home-section">
                 <h1>GAMEPEDIA</h1>
-                <div class="search">
+                <div class="search responsive">
                     <input type="text" placeholder="Digite o nome do jogo">
                     <button class="button">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -44,7 +44,7 @@
             </section>
         </div>
         
-        <section id="Games-section">
+        <section id="Games-section" class="responsive">
             <h1>JOGOS</h1>
                 <div class="item-result">
                     <h2>Counter Strike: Global Service</h2>
@@ -63,20 +63,20 @@
                 </div>
                 <div class="item-result">
                     <h2>MARVEL Spider-Man</h2>
-                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
+                    <img src="Imagens/Jogos/Vava.jpg" alt="">
                     <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
                 </div>
                 <div class="item-result">
                     <h2>MARVEL Spider-Man</h2>
-                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
+                    <img src="Imagens/Jogos/Elden Ring.jpg" alt="">
                     <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
                 </div>
         </section>
         <div id="Sobre-section">
             <section class="Sobre">
                 <h1>Sobre nós</h1>
-                <div class="container">
-                    <div class="text">
+                <div class="container responsive">
+                    <div class="text responsive">
                         <p><strong>Gamepedia</strong> Mais que um site, uma comunidade de gamers.
                             <br>
                             <br>
@@ -110,25 +110,25 @@
                 <form action="" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nome completo:</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" placeholder="Digite o nome completo..." required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" required>
+                        <input type="text" name="email" id="email" placeholder="email@email.com" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Assunto:</label>
-                        <input type="text" name="subject" id="subject" required>
+                        <input type="text" name="subject" id="subject" placeholder="Digite o assunto..." required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensagem:</label>
-                        <textarea name="message" id="message" rows="4" required></textarea>
+                        <textarea name="message" id="message" rows="4" placeholder="Digite a sua mensagem..." required></textarea>
                     </div>
                         <button type="submit" class="form-button">Enviar</button>
                 </form>
                 <div>
                     <h2>REDES SOCIAIS</h2>
-                    <ul class="social-list">
+                    <ul class="social-list responsive">
                         <li><a href="" target="_blank"><img src="Imagens/Facebook.png" alt=""></a></li>
                         <li><a href="" target="_blank"><img src="Imagens/Instagram.png" alt=""></a></li>
                         <li><a href="" target="_blank"><img src="Imagens/X.png" alt=""></a></li>
@@ -140,7 +140,8 @@
     </main>
     <footer class="footer">
         <span>&copy 2024 - <strong>GAMEPEDIA</strong> todos os direitos reservados.</span>
-        <span>Site desenvolvido por <strong><a href="https://github.com/LPSouz" target="_blank">Lucas Pedro</a></strong> com desáfios da <strong><a href="https://alura.com.br" target="_blank">Alura</a></strong></span>
+        <span>Site desenvolvido por <strong><a href="https://github.com/LPSouz" target="_blank">Lucas Pedro</a></strong> com desáfios da <strong><a href="https://alura.com.br" target="_blank">Alura</a></strong>.</span>
+        <span>Imagens utilizadas para estudos, todos os direitos são reservados as suas detentoras.</span>
     </footer>
     <button class="btnTopo" onclick="scrollToTop()"><img src="Imagens/scrollToTop 1.png" alt="Voltar ao topo"></button>
     <script src="menuNav.js"></script>
