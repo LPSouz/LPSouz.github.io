@@ -5,7 +5,7 @@
         "src": "package.json",
         "use": "@vercel/node",
         "config": {
-          "runtime": "nodejs16.x",
+          "runtime": "nodejs20.x",
           "installCommand": "npm ci",
           "buildCommand": "npm run build"
         }
