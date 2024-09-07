@@ -79,7 +79,7 @@ app.get('/api/game', async (req, res) => {
 });
 
 // Configuração da porta e chave da API usando variáveis de ambiente
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const apiKey = process.env.API_KEY;
 
 // Iniciar o servidor
