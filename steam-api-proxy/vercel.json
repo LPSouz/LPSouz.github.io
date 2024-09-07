@@ -2,18 +2,19 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.mjs",
+        "src": "package.json",
         "use": "@vercel/node",
         "config": {
-          "runtime": "nodejs20.x"
+          "runtime": "nodejs16.x",
+          "installCommand": "npm ci",
+          "buildCommand": "npm run build"
         }
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/server.mjs"
+        "src": "(.*)",
+        "dest": "server.mjs"
       }
     ]
   }
-  

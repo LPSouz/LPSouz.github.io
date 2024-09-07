@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.mjs",
   "scripts": {
-    "start": "NODE_ENV=production node server.mjs",
-    "dev": "NODE_ENV=development nodemon server.mjs",
+    "start": "node server.mjs",
+    "dev": "server.mjs",
     "build": "echo 'Build ready!'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
