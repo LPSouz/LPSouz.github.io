@@ -1,6 +1,6 @@
 // Função para preencher o datalist com opções do JSON
 function preencherDatalist() {
-    fetch('http://localhost:3000/games.json') 
+    fetch('./steam-api-proxy/games.json') 
         .then(response => response.json())
         .then(jogos => {
             const datalist = document.getElementById('jogo-list');
