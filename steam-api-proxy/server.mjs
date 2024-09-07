@@ -78,6 +78,12 @@ app.get('/api/game', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+// Configuração da porta e chave da API usando variáveis de ambiente
+const port = process.env.PORT || 3000;
+const apiKey = process.env.API_KEY;
+
+// Iniciar o servidor
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`);
+    console.log(`Usando chave de API: ${apiKey}`);
 });

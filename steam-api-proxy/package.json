@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=production node server.mjs", // Script para rodar em produção
+    "dev": "NODE_ENV=development nodemon server.mjs", // Script para rodar em desenvolvimento com hot reload
+    "build": "echo 'Build ready!'", // Placeholder para um eventual script de build
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +18,8 @@
     "lodash": "^4.17.21",
     "node-fetch": "^3.3.2"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0" 
+  }
 }
