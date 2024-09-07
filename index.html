@@ -9,29 +9,39 @@
     <link rel="stylesheet" href="Styles/About-section.css">
     <link rel="stylesheet" href="Styles/Home-section.css">
     <link rel="stylesheet" href="Styles/Games-section.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/web/icons8-controlador-nintendo-switch-pro-gradient-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="shortcut icon" href="assets/Imagens/web/icons8-controlador-nintendo-switch-pro-gradient-32.png" type="image/x-icon">
 </head>
 <body>
     <header id="#header-section">
         <div class="header-container">
-            <a href="#header-section" onclick="scrollToTop()"><img src="Imagens/Logo.png" alt="" class="Logo"></a>
+            <a href="#header-section" onclick="scrollToTop()"><img src="assets/Imagens/Logo.png" alt="" class="Logo"></a>
             <nav class="menu">
                 <ul>
-                    <li><a href="#Games-section">Games</a></li>
-                    <li><a href="#Sobre-section">Sobre</a></li>
-                    <li><a href="#Contato-section">Contato</a></li>
+                    <li><a href="#games-section">Games</a></li>
+                    <li><a href="#about-section">Sobre</a></li>
+                    <li><a href="#contact-section">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="Home">
-            <section id="Home-section">
+        <div class="home">
+            <section id="home-section">
+                <div id="welcomeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <h2>Bem-vindo ao Gamepedia!</h2>
+                        <p>As imagens presentes neste trabalho são de propriedade de seus respectivos criadores e são utilizadas aqui sob a égide do fair use, com o único propósito de ilustrar e complementar o conteúdo. Não há intenção de infringir quaisquer direitos autorais.</p>
+                    </div>
+                </div>
                 <h1>GAMEPEDIA</h1>
                 <div class="search responsive">
-                    <input type="text" placeholder="Digite o nome do jogo">
-                    <button class="button">
+                    <input type="text" placeholder="Digite o nome do jogo" id="searchInput" list="jogo-list">
+                    <datalist id="jogo-list">
+
+                    </datalist>
+                    <button class="button" onclick="buscarJogo()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                         </svg>
@@ -41,39 +51,80 @@
                         </div>
                     </button>
                 </div>
+                <div id="popup">
+                    <button id="closePopup" class="close-btn">X</button>
+                    <h2>Resultado da pesquisa</h2>
+                    <p id="resultado"></p>
+                </div>
             </section>
         </div>
-        
-        <section id="Games-section" class="responsive">
+
+        <section id="games-section" class="responsive">
             <h1>JOGOS</h1>
-                <div class="item-result">
+                <div class="item-result" id="searchResult">
                     <h2>Counter Strike: Global Service</h2>
-                    <img src="Imagens/Jogos/CS_GO.jpg" alt="">
+                    <img src="assets/Imagens/Jogos/CS_GO.jpg" alt="">
                     <p class="text-games">Counter-Strike: Global Offensive é um dos jogos de tiro em primeira pessoa mais populares do mundo, conhecido por seu competitivo modo multiplayer.</p>
+                    <button><a href="https://store.steampowered.com/app/730/CounterStrike_2/?l=brazilian" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
                 </div>
                 <div class="item-result">
                     <h2>Assassin's Creed Mirage</h2>
-                    <img src="Imagens/Jogos/Mirage.jpg" alt="">
+                    <img src="assets/Imagens/Jogos/Mirage.jpg" alt="">
                     <p class="text-games">Assassin's Creed Mirage marca um retorno a jogabilidade clássica da franquia, com foco em parkour fluido, assassinatos furtivos e uma narrativa envolvente.</p>
+                    <button><a href="https://www.ubisoft.com/pt-br/game/assassins-creed/mirage" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
                 </div>
                 <div class="item-result">
                     <h2>MARVEL Spider-Man</h2>
-                    <img src="Imagens/Jogos/Spider-man.jpg" alt="">
-                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                    <img src="assets/Imagens/Jogos/Spider-man.jpg" alt="">
+                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo, balançando pelos arranha-céus de Nova York.</p>
+                    <button><a href="https://www.playstation.com/pt-br/games/marvels-spider-man-remastered/" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
                 </div>
                 <div class="item-result">
-                    <h2>MARVEL Spider-Man</h2>
-                    <img src="Imagens/Jogos/Vava.jpg" alt="">
-                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                    <h2>Valorant</h2>
+                    <img src="assets/Imagens/Jogos/Vava.jpg" alt="">
+                    <p class="text-games">Valorant é um jogo de tiro tático em primeira pessoa que combina elementos de jogos de tiro tradicionais com habilidades únicas de cada agente.</p>
+                    <button><a href="https://playvalorant.com/pt-br/?gad_source=1&gclid=EAIaIQobChMI4YfkmPKviAMV9l9IAB2CLzHeEAAYASAAEgJAFPD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
                 </div>
                 <div class="item-result">
-                    <h2>MARVEL Spider-Man</h2>
-                    <img src="Imagens/Jogos/Elden Ring.jpg" alt="">
-                    <p class="text-games">Marvel's Spider-Man é um jogo de ação-aventura que coloca os jogadores no papel do icônico herói aracnídeo. </p>
+                    <h2>Elden Ring</h2>
+                    <img src="assets/Imagens/Jogos/Elden Ring.jpg" alt="">
+                    <p class="text-games">Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware, conhecida por criar jogos desafiadores como a série Dark Souls.</p>
+                    <button><a href="https://www.bandainamcoent.com/agecheck?redirect_uri=%2Fgames%2Felden-ring#null" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
                 </div>
+                <div class="item-result">
+                    <h2>God of War</h2>
+                    <img src="assets/Imagens/Jogos/God of War.jpg" alt="">
+                    <p class="text-games">God of War é um jogo de ação e aventura que acompanha a jornada de Kratos, um guerreiro espartano transformado em deus, em uma mitologia nórdica.</p>
+                    <button><a href="https://www.playstation.com/pt-br/games/god-of-war/" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
+                </div>
+                <div class="item-result">
+                    <h2>Rainbow Six Siege</h2>
+                    <img src="assets/Imagens/Jogos/R6.jpg" alt="">
+                    <p class="text-games">Rainbow Six Siege é um jogo de tiro tático em primeira pessoa que enfatiza o trabalho em equipe e a destruição ambiental, colocando os jogadores em confrontos.</p>
+                    <button><a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
+                </div>
+                <div class="item-result">
+                    <h2>Stray</h2>
+                    <img src="assets/Imagens/Jogos/Stray.jpg" alt="">
+                    <p class="text-games">Stray é um jogo de aventura felina que se passa em uma cidade cyberpunk habitada por robôs, onde um gato solitário busca um caminho de volta para casa.</p>
+                    <button><a href="https://stray.game" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
+                </div>
+                <div class="item-result">
+                    <h2>Red Dead Redemption 2</h2>
+                    <img src="assets/Imagens/Jogos/Red Dead Redemption.jpg" alt="">
+                    <p class="text-games">Red Dead Redemption 2 é um jogo de mundo aberto ambientado no Velho Oeste, onde um fora da lei em decadência tenta sobreviver em um mundo em constante mudança.</p>
+                    <button><a href="https://www.rockstargames.com/br/reddeadredemption2" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
+                </div>
+                <div class="item-result">
+                    <h2>League of Legends</h2>
+                    <img src="assets/Imagens/Jogos/LOL.jpg" alt="">
+                    <p class="text-games">LOL é um MOBA que coloca jogadores em equipes para se enfrentar em arenas, controlando campeões e trabalhando em equipe para destruir a base inimiga.</p>
+                    <button><a href="https://www.leagueoflegends.com/pt-br/" target="_blank" rel="noopener noreferrer">Saiba mais</a></button>
+                </div>
+
         </section>
-        <div id="Sobre-section">
-            <section class="Sobre">
+        <div id="about-section">
+            <section class="about">
                 <h1>Sobre nós</h1>
                 <div class="container responsive">
                     <div class="text responsive">
@@ -88,25 +139,26 @@
                     <div class="carrossel">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <div class="slides">
-                            <img src="Imagens/Jogos/CS_GO.jpg" alt="Counter Strike: Global Ofensive" class="slide active">
-                            <img src="Imagens/Jogos/Elden Ring.jpg" alt="Elden Ring" class="slide">
-                            <img src="Imagens/Jogos/God of War.jpg" alt="God of War" class="slide">
-                            <img src="Imagens/Jogos/LOL.jpg" alt="League of Legends" class="slide">
-                            <img src="Imagens/Jogos/Mirage.jpg" alt="Assassin's Creed: Mirage" class="slide">
-                            <img src="Imagens/Jogos/R6.jpg" alt="Rainbow Six: Siege" class="slide">
-                            <img src="Imagens/Jogos/Red Dead Redemption.jpg" alt="Red Dead Redemption 2" class="slide">
-                            <img src="Imagens/Jogos/Spider-man.jpg" alt="MARVEL'S Spider-Man" class="slide">
-                            <img src="Imagens/Jogos/Stray.jpg" alt="Stray" class="slide">
-                            <img src="Imagens/Jogos/Vava.jpg" alt="Valorant" class="slide">
+                            <img src="assets/Imagens/Jogos/CS_GO.jpg" alt="Counter Strike: Global Ofensive" class="slide active">
+                            <img src="assets/Imagens/Jogos/Elden Ring.jpg" alt="Elden Ring" class="slide">
+                            <img src="assets/Imagens/Jogos/God of War.jpg" alt="God of War" class="slide">
+                            <img src="assets/Imagens/Jogos/LOL.jpg" alt="League of Legends" class="slide">
+                            <img src="assets/Imagens/Jogos/Mirage.jpg" alt="Assassin's Creed: Mirage" class="slide">
+                            <img src="assets/Imagens/Jogos/R6.jpg" alt="Rainbow Six: Siege" class="slide">
+                            <img src="assets/Imagens/Jogos/Red Dead Redemption.jpg" alt="Red Dead Redemption 2" class="slide">
+                            <img src="assets/Imagens/Jogos/Spider-man.jpg" alt="MARVEL'S Spider-Man" class="slide">
+                            <img src="assets/Imagens/Jogos/Stray.jpg" alt="Stray" class="slide">
+                            <img src="assets/Imagens/Jogos/Vava.jpg" alt="Valorant" class="slide">
                         </div>
                         <button class="next" onclick="changeSlide(1)">&#10095;</button>
                     </div>
                 </div>
             </section>
         </div>
-        <section id="Contato-section">
+
+        <section id="contact-section">
             <h1>CONTATO</h1>
-            <div class="contato">
+            <div class="contact">
                 <form action="" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nome completo:</label>
@@ -129,10 +181,9 @@
                 <div>
                     <h2>REDES SOCIAIS</h2>
                     <ul class="social-list responsive">
-                        <li><a href="" target="_blank"><img src="Imagens/Facebook.png" alt=""></a></li>
-                        <li><a href="" target="_blank"><img src="Imagens/Instagram.png" alt=""></a></li>
-                        <li><a href="" target="_blank"><img src="Imagens/X.png" alt=""></a></li>
-                        <li><a href="" target="_blank"><img src="" alt=""></a></li>
+                        <li><a href="" target="_blank"><img src="assets/Imagens/Facebook.png" alt=""></a></li>
+                        <li><a href="" target="_blank"><img src="assets/Imagens/Instagram.png" alt=""></a></li>
+                        <li><a href="" target="_blank"><img src="assets/Imagens/X.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -141,11 +192,13 @@
     <footer class="footer">
         <span>&copy 2024 - <strong>GAMEPEDIA</strong> todos os direitos reservados.</span>
         <span>Site desenvolvido por <strong><a href="https://github.com/LPSouz" target="_blank">Lucas Pedro</a></strong> com desáfios da <strong><a href="https://alura.com.br" target="_blank">Alura</a></strong>.</span>
-        <span>Imagens utilizadas para estudos, todos os direitos são reservados as suas detentoras.</span>
     </footer>
-    <button class="btnTopo" onclick="scrollToTop()"><img src="Imagens/scrollToTop 1.png" alt="Voltar ao topo"></button>
-    <script src="menuNav.js"></script>
-    <script src="scrollToTop.js"></script>
-    <script src="carrossel.js"></script>
+    <button id="btnTopo" class="btnTopo" onclick="scrollToTop()"><img src="Assets/Imagens/scrollToTop 1.png" alt="Voltar ao topo"></button>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/menuNav.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+    <script src="scripts/carrossel.js"></script>
+    <script src="steam-api-proxy/server.mjs"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

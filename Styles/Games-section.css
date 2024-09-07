@@ -1,14 +1,14 @@
-#Games-section {
+#games-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
+    height: 150vh;
     background-color: #1F1F3F;
     color: #00FFFF;
     gap: 10px;
 }
 
-#Games-section h1 {
+#games-section h1 {
     margin-top: 160px;
     padding: 0;
     width: 100%;
@@ -19,7 +19,7 @@
 
 .item-result {
     padding: 5px;
-    height: 300px;
+    height: 330px;
     background-color: #1F1F3F;
     border: 1px solid #00FFFF;
     border-radius: 20px;
@@ -33,6 +33,32 @@
 .item-result img {
     margin-bottom: 5px;
     max-width: 200px;
+}
+
+.item-result button {
+    margin-top: 10px;
+    padding: 2px;
+    width: 100px;
+    background-color: #9400D3;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.item-result button>a {
+    text-decoration: none;
+    color: white;
+}
+
+.item-result button:hover {
+    background-color: #00FFFF;
+    color: black;
+}
+
+.item-result button>a:hover {
+    color: black;
 }
 
 .text-games {

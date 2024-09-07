@@ -1,4 +1,4 @@
-#Contato-section {
+#contact-section {
     display: grid;
     place-content: center;
     height: 100vh;
@@ -9,13 +9,13 @@
     box-shadow: 2px 2px 10px #FFFF00;
 }
 
-#Contato-section h1 {
+#contact-section h1 {
     margin-bottom: 20px;
     display: block;
     font-size: 50px;
 }
 
-.contato {
+.contact {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -69,12 +69,13 @@
     border-radius: 20px;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    transition: ease-in-out .8s;
 }
 
 .form-button:hover {
     background-color: #00FFFF;
     color: #1F1F3F;
+    transition: ease-in-out .8s;
 }
 
 .social-list {

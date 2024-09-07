@@ -1,4 +1,4 @@
-.Home {
+.home {
     background-color: #f5f5f5;
     color: #1F1F3F;
     height: 100vh;
@@ -8,13 +8,13 @@
     box-shadow: 2px 2px 10px #FFFF00;
 }
 
-#Home-section {
+#home-section {
     display: grid;
     place-items: center;
     align-items: center;
 }
 
-#Home-section h1 {
+#home-section h1 {
     margin: 100px;
     font-size: 50px;
     letter-spacing: 2.5px;
@@ -28,7 +28,7 @@
     height: 20px;
 }
 
-#Home-section input {
+#home-section input {
     background-color: #1F1F3F;
     color: white;
     padding: 10px;
@@ -41,7 +41,7 @@
     box-shadow: -5px 5px 5px #1F1F3F;
 }
 
-#Home-section input::placeholder {
+#home-section input::placeholder {
     color: white;
 }
 
@@ -78,7 +78,95 @@
     margin: 0 5em;
   }
 
-#Home-section button:hover {
+#home-section button:hover {
     background-color: #00FFFF;
     color: #1F1F3F;
+}
+
+#popup {
+  padding: 20px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1F1F3F;
+  border: 1px solid #1F1F3F;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px #1F1F3F;
+  color: #00FFFF;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 18px;
+  letter-spacing: .8px;
+}
+
+#popup h2 {
+  color: #FFFF00;
+}
+
+#popup img {
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+#popup p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#popup a {
+  padding: 5px;
+  color: white;
+  background-color: #9400D3;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: ease .8s;
+}
+
+#popup a:hover {
+  background-color: #00FFFF;
+  color: black;
+  transition: ease .8s;
+}
+
+.close-btn {
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #00FFFF;
+}
+
+#popup>.close-btn:hover {
+  background-color: transparent;
+  color: #00FFFF;
+}
+
+#popup.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal {
+  width: 300px;
+  background-color: #1f1f3f;
+  color: #00FFFF;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px #1F1F3F;
+}
+
+.modal h2 {
+  color: #FFFF00;
+}
+
+.modal span {
+  font-size: 30px;
+  cursor: pointer;
 }
